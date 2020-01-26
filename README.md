@@ -4,7 +4,9 @@ Forked from https://github.com/openai/gpt-2 on 01-25-2020. Most of the code here
 This project is planned to be based 
 upon https://www.linuxjournal.com/content/ai-wizard-words
 
-## Work in Progress - 01-25-2020 ##
+The following steps were taken from an Ubuntu 19.10 host with a GeForce GTX 1080 GPU while experimenting at home.
+
+This is a work in progress - 01-25-2020
 
 ## Install the Nvidia Container Runtime
 https://nvidia.github.io/nvidia-container-runtime/
@@ -40,6 +42,23 @@ docker images
 docker run -it --runtime=nvidia openai/gpt-2-gpu:$(date +%F) /bin/bash
 
 root@[container_id]:/gpt-2# nvidia-smi
+Sun Jan 26 17:42:46 2020       
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 430.50       Driver Version: 430.50       CUDA Version: 10.1     |
+|-------------------------------+----------------------+----------------------+
+| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
+|===============================+======================+======================|
+|   0  GeForce GTX 1080    Off  | 00000000:01:00.0  On |                  N/A |
+| 38%   34C    P0    44W / 180W |   1042MiB /  8117MiB |      0%      Default |
++-------------------------------+----------------------+----------------------+
+                                                                               
++-----------------------------------------------------------------------------+
+| Processes:                                                       GPU Memory |
+|  GPU       PID   Type   Process name                             Usage      |
+|=============================================================================|
++-----------------------------------------------------------------------------+
+
 
 root@[container_id]:/gpt-2# src/interactive_conditional_samples.py 
 
