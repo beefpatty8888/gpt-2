@@ -10,6 +10,8 @@ ENV NVIDIA_VISIBLE_DEVICES=all \
     NVIDIA_REQUIRE_CUDA="cuda>=8.0" \
     LANG=C.UTF-8
 
+ENV DEBIAN_FRONTEND=noninteractive
+
 RUN mkdir /gpt-2
 WORKDIR /gpt-2
 ADD . /gpt-2
@@ -18,3 +20,5 @@ RUN python3 download_model.py 124M
 RUN python3 download_model.py 355M
 RUN python3 download_model.py 774M
 RUN python3 download_model.py 1558M
+RUN apt update
+RUN apt install nvidia-current -y
