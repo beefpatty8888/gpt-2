@@ -9,7 +9,7 @@ import tensorflow as tf
 import model, sample, encoder
 
 def interact_model(
-    model_name='1558M',
+    model_name='355M',
     seed=None,
     nsamples=1,
     batch_size=1,
