@@ -41,5 +41,9 @@ docker run -it --runtime=nvidia openai/gpt-2-gpu:$(date +%F) /bin/bash
 
 root@[container_id]:/gpt-2# nvidia-smi
 
+root@[container_id]:/gpt-2# src/interactive_conditional_samples.py 
+
+Model prompt >>> [insert any text to begin text predicting]
+
 ```
 
