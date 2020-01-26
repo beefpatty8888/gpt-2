@@ -1,5 +1,5 @@
 ## NOTES 
-Forked from https://github.com/openai/gpt-2 on 01-25-2020
+Forked from https://github.com/openai/gpt-2 on 01-25-2020. Most of the code here, aside my changes and fixes, are from the original repository.
 
 This project is planned to be based 
 upon https://www.linuxjournal.com/content/ai-wizard-words
