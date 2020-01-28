@@ -1,7 +1,7 @@
 ## NOTES 
-Forked from https://github.com/openai/gpt-2 on 01-25-2020. Most of the code here, aside my changes and fixes, are from the original repository.
+Forked from https://github.com/openai/gpt-2 on 01-24-2020. Most of the code here, aside my changes and fixes, are from the original repository.
 
-This project is planned to be based 
+This project is based 
 upon https://www.linuxjournal.com/content/ai-wizard-words
 
 The following steps were taken from an Ubuntu 19.10 host with a GeForce GTX 1080 GPU while experimenting at home.
