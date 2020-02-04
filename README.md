@@ -66,7 +66,7 @@ Model prompt >>> [insert any text to begin text predicting]
 
 ```
 
-## Using the CPU, instead of GPU, Docker Container Image
+## Using the CPU, instead of GPU, Dockerfile
 
 ```
 docker build -t openai/gpt-2-cpu:$(date +%F) -f Dockerfile.cpu .
