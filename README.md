@@ -39,7 +39,7 @@ docker build -t openai/gpt-2-gpu:$(date +%F) -f Dockerfile.gpu .
 
 docker images
 
-docker run -it --runtime=nvidia openai/gpt-2-gpu:$(date +%F) /bin/bash
+docker run -it --rm --runtime=nvidia openai/gpt-2-gpu:$(date +%F) /bin/bash
 
 root@[container_id]:/gpt-2# nvidia-smi
 Sun Jan 26 17:42:46 2020       
@@ -65,4 +65,14 @@ root@[container_id]:/gpt-2# src/interactive_conditional_samples.py
 Model prompt >>> [insert any text to begin text predicting]
 
 ```
+
+## Using the CPU, instead of GPU, Docker Container Image
+
+```
+docker build -t openai/gpt-2-cpu:$(date +%F) -f Dockerfile.cpu .
+
+docker run -it --rm openai/gpt-2-cpu:$(date +%F) /bin/bash
+
+```
+
 
